@@ -1,0 +1,32 @@
+input{
+    width: 350px; 
+    height: 40px;
+    border: 1px solid thistle;
+    border-radius: 10px;
+ }
+ 
+ 
+     
+     
+ h1{
+     color: midnightblue;
+ }
+ h4{
+     color: indigo;
+ }
+ label{
+     color:rebeccapurple
+ }
+ button{
+     width: 350px;
+     height: 40px;
+     border-radius: 10px;
+     justify-content: center;
+ }
+ .ABC {
+     border: 1px solid rgb(83, 79, 79);
+     border-radius: 10px;
+ }
+ .AC{
+     background-color:lavender;
+ }
