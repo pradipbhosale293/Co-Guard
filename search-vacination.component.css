@@ -1,0 +1,33 @@
+.AC{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+form{
+    text-align: center;
+    
+};
+.AB{
+    margin-left: 200PX;
+    margin-right: 200Px;
+
+};
+.ABC{
+    
+margin-left: 300px;
+    
+}
+select{
+    margin: 10px;
+}
+hr{
+    border: solid 2px purple;
+}
+input{
+    border-radius: 10px;
+}
+button{
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}

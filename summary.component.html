@@ -1,0 +1,63 @@
+<!-- <app-header></app-header> -->
+<div class="container-fluid my-5">
+    <div class="row">
+        <div class="col-md-3">
+            <form class="form-center AB">
+                <label for="">Registration Today</label><br>
+                <input type="number" class="form-control" name="reg-data" [value]="registrationToday">
+            </form>
+
+            
+        </div>
+        <div class="col-md-3">
+            <form class="form-center AB">
+                <label for="">Vacination Today</label><br>
+                <input type="number" class="form-control" name="vac-data" [value]="vacinationToday">
+            </form>
+        </div>
+        <div class="col-md-3">
+            <form class="form-center AB">
+                <label for="">Partially Vaccinated Today</label><br>
+                <input type="number" class="form-control" name="parVC-data" [value]="PartiallyVaccinatedToday">
+            </form>
+        </div>
+        <div class="col-md-3">
+            <form class="form-center AB">
+                <label for="">Fully Vaccinated Today</label><br>
+                <input type="number" class="form-control" name="parVC-data" [value]="FullyVaccinatedToday">
+            </form>
+        </div>
+ </div>
+ <div class="row py-5 my-5">
+     <div class="col-md-3">
+         <strong class="mx-5">India/{{selectedState}}</strong>
+     </div>
+     <div class="col-md-5"></div>
+     <div class="col-md-4">
+         <div class="row">
+             <div class="col-6">
+         
+            <form class="form-right">
+                <select (change)="onStateSelect($event)" name="STATE"  [(ngModel)]="selectedState" class="form-select">
+                    <!-- <option *ngIf="StateName">Select State</option> -->
+                    <option *ngFor="let data of UserState" [ngValue]="data.state_id">{{data.state_name}}</option>
+                </select>
+            </form>
+        </div>
+        <div class="col-6">
+            <form class="form-right">
+                <select class="form-select">
+                    <option *ngFor="let dt of userDistrict" >{{dt.district_name}}</option>
+                </select>
+            </form>
+         
+         </div>
+        </div>
+     </div>
+     
+ </div>
+
+</div><br><br><br>
+<app-vacination-trends></app-vacination-trends>
+<!-- <app-footer></app-footer> -->
+

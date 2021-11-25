@@ -1,0 +1,77 @@
+<br>
+<div class="overflow-hidden">
+    <div class="row bg-light py-5">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 text-center">
+            <h1 class="CustFont">
+                Search Your Nearest Vaccination Center
+            </h1>
+            <h5>
+                Get a preview list of the nearest centers and check availability of vaccination slots
+            </h5>
+            <h5>
+                <a routerLink="" class="text-decoration-none">Login to book your slot</a>
+            </h5>
+
+            <br><br>
+
+            <!-- This search by district and PIN tab -->
+            <p-tabView>
+                <p-tabPanel header="By District">
+                    <div class="row">
+                        <div class="col-md-4">
+
+                            <!-- <p-dropdown [options]="UserState" [(ngModel)]="UserState" placeholder="Select a City" optionLabel="name" (click)="GetState()" 
+	                    [showClear]="true"></p-dropdown> -->
+
+                            <!-- <select type="button" (click)="GetState()" *ngFor="let item of UserState">
+                                Select your State
+                                
+                                <option>{{item.state_name}}</option>
+                                
+                            </select> -->
+
+                            <form>
+                                <select (change)="onStateSelect($event)" name="STATE"  [(ngModel)]="selectedState" class="form-select">
+                                    <!-- <option *ngIf="StateName">Select State</option> -->
+                                    <option *ngFor="let data of UserState" [ngValue]="data.state_id">{{data.state_name}}</option>
+                                </select>
+                            </form>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <form>
+                                <select class="form-select">
+                                    <option *ngFor="let dt of userDistrict" >{{dt.district_name}}</option>
+                                </select>
+                            </form>
+                        </div>
+
+                        <div class="col-md-4">
+                            <button class="btn btn-primary border bordered rounded-pill btn-lg px-5" type="button" >
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </p-tabPanel>
+
+                <p-tabPanel header="By PIN code">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-4">
+                            <input class="border bordered rounded-pill btn-lg" placeholder="Enter PIN code"
+                                type="search">
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary border bordered rounded-pill btn-lg px-5 " type="button">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </p-tabPanel>
+            </p-tabView>
+        </div>
+    </div>
+</div>

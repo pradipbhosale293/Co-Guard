@@ -1,0 +1,16 @@
+input{
+    border: 1px solid white;
+    text-align: center;
+}
+label{
+    font-size: 20px;
+    color: purple;
+    margin-left: 100px;
+}
+.AB{
+    border: 1px solid black;
+    
+}
+select{
+    margin-left: 50px;
+}

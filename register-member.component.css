@@ -1,0 +1,44 @@
+input{
+    width: 400px;
+    height: 40px;
+    border-radius: 15px; 
+    border: 1px solid blueviolet;
+    
+    font-size: 20px;
+    text-align:center ;
+}
+label{
+    color: darkviolet;
+}
+h3{
+    color:midnightblue;
+}
+button{
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    
+}
+strong{
+    color:midnightblue;
+}
+.ABC {
+    border: 1px solid rgb(83, 79, 79);
+    border-radius: 10px;
+    background-color: lavender;
+    margin-top: 10px;
+
+}
+.AD{
+    background-color:lavender ;
+    border: 1px solid lavender;
+    color: blue;
+}
+.AG{
+    width: 50px;
+    height: 15px;
+}
+select{
+    width: 250px;
+    height: 40px;
+}

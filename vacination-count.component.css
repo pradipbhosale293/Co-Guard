@@ -1,0 +1,18 @@
+label{
+    
+    font-size: 40px;
+    color: darkred;
+    
+  
+}
+.ABC{
+    /* margin-left: 200px;
+    margin-right: 150px; */
+    background-color: rgb(248, 244, 244);
+}
+input{
+    border: 1px whitesmoke;
+    font-size: 40px;
+
+    color: hotpink;
+}

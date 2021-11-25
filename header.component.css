@@ -1,0 +1,20 @@
+.AB{
+    font-size: 35px;
+color: blueviolet;
+padding-left: 50px;
+}
+.top-left {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+  }
+  .AC{
+      background-color: rgb(232, 237, 241);
+  }
+  .AA{
+      color: darkviolet;
+      background-color: rgb(135, 250, 160);
+      font-size: 25px;
+      border-radius: 10px;
+      text-decoration: none;
+  }

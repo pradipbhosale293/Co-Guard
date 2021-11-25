@@ -1,0 +1,81 @@
+<!-- <app-header></app-header><br> -->
+<div class="container " *ngIf="onClickOpen">
+    <div class="row">
+        <div class="col-md-3 "></div>
+        <div class="col-md-6 text-center ABC">
+            <img src="../../assets/img RgF.svg" alt="">
+            <h3>Register or Sign In for Vaccination</h3><br>
+            <form>
+                <label for="">An OTP will be sent to your mobile number for verification</label><br><br>
+                <input type="tel"  name="MobNO" [(ngModel)]="MoNo"  maxlength="10" placeholder="Enter your mobile number"><br><br>
+                
+                <button type="submit" class="btn btn-primary "  (click)="getOtp()">Get OTP</button><br>
+                <small>By Sign In/Registration, I agree to the <strong> of Service </strong>and <strong>Privacy Policy</strong></small><br><br>
+
+
+            </form>
+            <h6 class="text-secondary">OR BOOK APPOINTMENT USING</h6><br>
+            <a class="px-4" href="https://www.aarogyasetu.gov.in/"><img src="../../assets/partner-img3.png" alt=""></a>
+            <a class="px-4" href="https://web.umang.gov.in/web_new/login?redirect_to=department%3Furl%3Dcowin%2F%26dept_id%3D355%26dept_name%3DCo-WIN"><img src="../../assets/partner -img2.png" alt=""></a>
+        </div>
+        <div class="col-md-3"></div>
+
+    </div>
+</div><br>
+
+<div class="container  " *ngIf="OnclickOpenSingUp">
+    <div class="row">
+        <div class="col-md-3 "></div>
+        <div class="col-md-6 text-center py-4 mb-4 ABC">
+            <img src="../../assets/img RgF.svg" alt="">
+            <h3><b>OTP Verification</b></h3><br>
+            <h5>An OTP has been sent to</h5>
+
+            <form>
+                <label for="">{{MoNo}}</label><br><br>
+                <input type="text"  name="otp" [(ngModel)]="otp"  maxlength="10" placeholder="Enter OTP"><br>
+                <button type="submit" class="btn btn-light AD "  (click)="getOtp()">Resend OTP</button><br>
+                <small>There might be some delay in receiving the OTP due<br> to heavy traffic</small><br><br>
+                <button type="submit" class="btn btn-primary "  (click)="confirmOtp()">Verify & Proceed</button><br>
+            </form>
+              </div>
+        <div class="col-md-3"></div>
+
+    </div>
+</div>
+
+
+<div class="container  " *ngIf="onclickadd">
+    <div class="row">
+        <div class="col-md-3 "></div>
+        <div class="col-md-6  py-4 mb-4 ABC text-center">
+        <h2 class="text-center text-primary"><b>Register for Vaccination</b></h2>
+        <div class="text-center text-secondary">
+            <small>Your Photo ID will be verified at the time of your vaccination appointment.<br>  Please provide the details of the <b> Photo ID</b> you will carry for vaccination.</small>
+        </div>
+
+            <form class="text-center" >
+                <label><small>Photo ID Proof</small></label><br>
+                <select aria-label="Select Your State" > 
+            
+                    <option *ngFor="let photoId of photoIds">{{photoId}}</option>
+                </select><br><br>
+                
+                <input type="text" class="form-center" name="pidNo"   maxlength="10" placeholder="Voter ID Number"><br><br>
+                <input type="text" name="name" placeholder="Enter Your Name"><br>
+                <label for="">Gender</label><br>
+                <input class="AG" type="radio" name="gender" value="male" >
+                <label for="male">Male</label>
+                <input class="AG" type="radio" name="gender" value="female" >
+                <label for="female">Female</label>
+                <input class="AG" type="radio" name="gender" value="others" >
+                <label for="others">Others</label><br>
+                <input type="date" name="date" placeholder="Enter Your Birth Date"><br><br>
+              
+                <button type="submit" class="btn btn-primary "  (click)="add()">Add</button><br>
+            </form>
+              </div>
+        <div class="col-md-3"></div>
+
+    </div>
+</div>
